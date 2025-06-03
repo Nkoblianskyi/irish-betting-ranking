@@ -24,7 +24,7 @@ export default function HomePage() {
       setTimeout(() => {
         setShowModal(true)
         setModalType("ranking")
-      }, 1000)
+      }, 8000)
     }
 
     // Set top 3 sites for ranking modal
