@@ -24,7 +24,7 @@ export default function HomePage() {
       setTimeout(() => {
         setShowModal(true)
         setModalType("ranking")
-      }, 8000)
+      }, 1000)
     }
 
     // Set top 3 sites for ranking modal
@@ -68,7 +68,7 @@ export default function HomePage() {
               <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
                 <Award className="w-4 h-4" />
               </div>
-              <h1 className="text-lg sm:text-xl md:text-2xl font-bold">TopBettingIrishSites</h1>
+              <h1 className="text-lg sm:text-xl md:text-2xl font-bold">TopBettingIrishSites.com</h1>
             </div>
             <nav className="hidden lg:flex space-x-6">
               <Link href="#rankings" className="hover:text-orange-300 transition-colors">
@@ -91,7 +91,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section
         className="relative bg-cover bg-center bg-no-repeat h-[200px] sm:h-[250px] overflow-hidden"
-        style={{ backgroundImage: "url('/hero.jpg')" }}
+        style={{ backgroundImage: "url('/placeholder.svg?height=250&width=1920&text=Rugby+Field+Background')" }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center text-center text-white">
@@ -143,13 +143,15 @@ export default function HomePage() {
                         >
                           {index + 1}
                         </div>
-                        <Image
-                          src={site.logo || "/placeholder.svg"}
-                          alt={site.name}
-                          width={200}
-                          height={80}
-                          className="h-16 sm:h-20 md:h-24 w-auto hover:scale-110 transition-transform duration-300"
-                        />
+                        <div className="w-32 sm:w-40 md:w-48 h-16 sm:h-20 md:h-24 flex-shrink-0 flex items-center justify-center">
+                          <Image
+                            src={site.logo || "/placeholder.svg"}
+                            alt={site.name}
+                            width={200}
+                            height={80}
+                            className="max-w-full max-h-full object-contain hover:scale-110 transition-transform duration-300"
+                          />
+                        </div>
                       </div>
 
                       <div
@@ -595,13 +597,15 @@ export default function HomePage() {
                             >
                               {index + 1}
                             </div>
-                            <Image
-                              src={site.logo || "/placeholder.svg"}
-                              alt={site.name}
-                              width={200}
-                              height={80}
-                              className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto flex-shrink-0 hover:scale-105 transition-transform duration-300"
-                            />
+                            <div className="w-16 sm:w-20 md:w-24 h-8 sm:h-10 md:h-12 flex-shrink-0 flex items-center justify-center">
+                              <Image
+                                src={site.logo || "/placeholder.svg"}
+                                alt={site.name}
+                                width={200}
+                                height={80}
+                                className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300"
+                              />
+                            </div>
                           </div>
                           <div className="flex-1 text-center sm:text-left w-full sm:w-auto">
                             <h3 className="font-semibold text-xs sm:text-sm md:text-base mb-1">{site.name}</h3>
