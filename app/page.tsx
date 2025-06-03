@@ -68,7 +68,7 @@ export default function HomePage() {
               <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
                 <Award className="w-4 h-4" />
               </div>
-              <h1 className="text-lg sm:text-xl md:text-2xl font-bold">TopBettingIrishSites.com</h1>
+              <h1 className="text-lg sm:text-xl md:text-2xl font-bold">TopBettingIrishSites</h1>
             </div>
             <nav className="hidden lg:flex space-x-6">
               <Link href="#rankings" className="hover:text-orange-300 transition-colors">
@@ -520,7 +520,7 @@ export default function HomePage() {
                 <h2 className="text-sm sm:text-base md:text-lg font-bold text-green-800 pr-2">
                   {modalType === "age" && "18+ Only"}
                   {modalType === "terms" && "Advertiser Info"}
-                  {modalType === "ranking" && "Top 3 Betting Sites"}
+                  {modalType === "ranking" && "Top Betting Sites"}
                 </h2>
                 <Button
                   variant="ghost"
