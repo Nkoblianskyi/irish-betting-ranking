@@ -91,7 +91,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section
         className="relative bg-cover bg-center bg-no-repeat h-[200px] sm:h-[250px] overflow-hidden"
-        style={{ backgroundImage: "url('/placeholder.svg?height=250&width=1920&text=Rugby+Field+Background')" }}
+        style={{ backgroundImage: "url('/hero.jpg')" }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center text-center text-white">
